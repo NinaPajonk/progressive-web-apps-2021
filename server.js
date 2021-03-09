@@ -1,11 +1,12 @@
 // PACKAGES 
-const express = require('express')
-const app = express()
-const port = 5000
+const express = require('express');
+const app = express();
+const port = 5000;
 const path = require('path');
-var bodyParser = require('body-parser')
+var bodyParser = require('body-parser');
+const request = require('request');
 
-const locations = require('./modules/locations.json')
+const locations = require('./modules/locations.json');
 
 
 
