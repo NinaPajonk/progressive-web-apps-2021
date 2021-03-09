@@ -1,0 +1,140 @@
+* { margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body  {  
+    background-image: url('/web-app-from-scratch-2021/images/bg.jpg');
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'monteserat', sans-serif;
+}
+
+h1{
+    text-align: center;
+    padding: 10px;
+}
+
+/* search balk */
+  .search{
+      text-align: center;
+      margin: 20px;
+
+      
+  }
+  input[type="text"]{
+      height: 30px;
+      width: 250px;
+      background: #e7e7e7;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 14px;
+      font-weight: bold;
+      border: none;
+      border-radius: 12px;
+      padding: 10px;    
+  }
+
+  input[type="text"]:focus {
+    background-color: rgba(255, 255, 255, 0.7); 
+    }
+
+  input[type="submit"]{
+    height: 30px;
+    width: 70px;
+    background: #e7e7e7;
+    font-family: 'monteserat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+}
+/* resultaat search balk */
+.display{
+    text-align: center;
+    
+}
+.name {
+    color: #fff;
+font-size: 60px;
+font-weight: 900;
+margin: 30px 0px;
+text-shadow: 2px 7px rgba(0,0,0,0.6);
+}
+.desc, .temp, .wind {
+    color: #fff;
+font-size: 20px;
+font-weight: 900;
+margin: 20px 0px;
+text-shadow: 2px 3px rgba(0,0,0,0.6);
+}
+
+/* Top 5 surf spots */
+
+.list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    color: white;
+
+}
+article{
+    background-color: rgba(0,0,0,0.6);
+    margin: 10px;
+    margin-bottom: 50px;
+    width: 310px;
+    height: 230px;
+    border-radius: 20px;
+}
+
+article img {
+    width: 300px;
+    height: 180px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+article h2{
+    padding-top: 15px;
+}
+
+/* unvisited link */
+a {
+    text-decoration: none;
+}
+a:link {
+    color: white;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: orangered;
+  }
+  
+  /* selected link */
+  a:active {
+    color: red;
+  }
+/* Detail sections spots5*/
+  section {
+    opacity: 0;
+    transition: 0.25s;
+    width: 100%;
+}
+
+section.active {
+    opacity: 1;
+    height: 100vh;
+    background: white;
+    position: absolute;
+    z-index: 99;
+}

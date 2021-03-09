@@ -2,7 +2,7 @@
   "name": "progressive-web-apps-2021",
   "version": "1.0.0",
   "description": "PWA",
-  "main": "app.js",
+  "main": "server.js",
   "directories": {
     "doc": "docs",
     "example": "examples"
