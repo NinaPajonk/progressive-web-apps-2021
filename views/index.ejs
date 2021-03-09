@@ -5,38 +5,19 @@
     <title>Kitesurf Spots</title>
 </head>
 <body>
+    <header> 
     <%- include ('./partials/header') %>
+</header>
+<main> 
 
-    <main>
-<!-- Zoek functie-->
-<div class="search"> 
-    <input type="text" class="inputValue" placeholder="Voer een bestemming in"> 
-    <input type="submit" value="submit" class="button">
-</div>
+    <%- include ('./partials/main/bodyMain.ejs') %>
 
 
-
-<!-- Response van zoek functie-->
-<div class="display">  
-    <h1 class="name"></h1>
-    <p class="desc"></p>
-    <p class="temp"> </p>
-    <p class="wind"> </p>
-</div>
-
-
-<!-- top 5 spots -->
-<div class="list"> </div>
-
-
-
-<!-- detail page -->
-<section class="spots5">
-    <h2 class="surfspot"></h2> 
-    <p></p>
-</section>
-    </main>
+</main>
+<footer> 
 
  <%- include ('./partials/footer') %>
+</footer>
+
 </body>
 </html>
